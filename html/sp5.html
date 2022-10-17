@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- header -->
+        <header id="header" data-aos="fade-down" data-aos-duration="1000">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand col-2 col-md-2" href="#">
+                    <img src="../assets/img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar" aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-10 col-md-10" id="nav-bar">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-10 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="./shop-women.html">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop-men.html">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop-new.html">Sản phẩm mới</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="#">Khyến mãi</a>
+                            <ul class="sub-menu bg-light">
+                                <li><a class="nav-link" href=""> Giftset yêu thương </a></li>
+                                <li><a class="nav-link" href=""> Combo cảm ơn </a></li>
+                                <li><a class="nav-link" href=""> Mua nhiều giảm nhiều </a></li>
+                                <li><a class="nav-link" href=""> Giải phóng tồn kho </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class=" stateBox nav col-md-2 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/signin.html"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="modal js-modal" id="modal">
+
+        </div>
+        <div class="container-fluid header-brand ">
+            <div class="display-4">CITIZEN</div>
+        </div>
+        <div class="container single-product-wrapper position-relative">
+            <div class="toast toast-error_qty" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000" id="errorQty">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <strong class="mr-auto ml-3"></strong>
+            </div>
+            <div class="toast toast-success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000" id="ordersucces">
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                <strong class="mr-auto ml-3">
+                    Đặt hàng thành công!!
+                </strong>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <img src="../assets/img/product/citizen/sp2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product_info">
+                        <div class="product_info__brand" data-aos="fade-right" data-aos-duration="1000">CITIZEN</div>
+                        <h3 class="product_info__name" data-aos="fade-left" data-aos-duration="1000">CITIZEN L</h3>
+                        <p class="product_info__type" data-aos="fade-right  " data-aos-duration="1000">Eau de Parfum Spray</p>
+                        <div class="product_info__rating">
+                            <div class="start_ratting">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <p class="product_info__price" data-aos="fade-down-right" data-aos-duration="1000">10.485.000đ </p>
+                        <p class="product-info__about" data-aos="fade-left" data-aos-duration="1000">
+                            - Mã sản phẩm: EM0910-80D <br>
+                            - Giới tính: Nữ <br>
+                            - Bộ máy: Eco-Drive <br>
+                            - Đường kính: 30mm <br>
+                            - Kim cương <br>
+                            - Mặt xà cừ</p>
+                        <div class="product_info__quantity_love row" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="heart-active">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <span>Xóa vào danh sách yêu thích</span>
+                            </div>
+                            <div class="heart-n-active" id="add-favorite">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span>Thêm khỏi danh sách yêu thích</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_info__quantity row" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="col-md-auto product_info__quantity_input">
+                            <a class="minus" role="button" id="minus-item">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                            <input name="qty" id="qty" type="number" value="1" min="1" max="6" aria-valuemin="1" aria-valuemax="6" aria-valuenow="6" autocomplete="off" role="spinbutton">
+                            <a class="plus" role="button" id="plus-item">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="product_info__addbag">
+                            <button class="btn btn-buy" id="btnBuy">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class=" row product_info__service align-items-center" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="col-md-4">
+                            <div class="product_info__service_item">
+                                <div class="product_info__service_item_icon">
+                                    <i class="fa fa-truck" aria-hidden="true"></i>
+                                </div>
+                                <div class="product_info__service_item_text">
+                                    <span>Miễn phí vận chuyển</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product_info__service_item">
+                                <div class="product_info__service_item_icon">
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                </div>
+                                <div class="product_info__service_item_text">
+                                    <span>Mua và nhận hàng ngay tại cửa hàng</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product_info__service_item">
+                                <div class="product_info__service_item_icon">
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                </div>
+                                <div class="product_info__service_item_text">
+                                    <span>Thanh toán dễ dàng</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- thong bao -->
+        <!-- Position it -->
+
+        <div class="container product_descr">
+            <h2 class="product_descr__brand" data-aos="fade-up" data-aos-duration="1000">CITIZEN L</h2>
+            <h3 class="product_descr__name" data-aos="fade-up" data-aos-duration="1000">Flora Gorgeous Gardenia</h3>
+            <p class="text-center product_descr__descr" data-aos="fade-up" data-aos-duration="1000">Sang trọng, quý phái là hai từ bao quát nhất khi nói về chiếc đồng hồ dành cho phái đẹp - Citizen EM0910-80D, từ đường nét cho đến những chi tiết nhỏ nhất của chiếc đồng hồ này đều tỏa ra sự quyến rũ, cá tính. Phần mặt đồng hồ được thiết kế theo phong cách Minimalist đơn giản, sang trọng. Chính vì thế, chiếc đồng hồ này có thể phù hợp với mọi phong cách trang phục của phái nữ. Mặt số đồng hồ được thiết kế tinh tế, tỉ mỉ từ những đường nét nhỏ nhất với bộ kim sang trọng, quý phái mang lại cảm giác cuốn hút và thanh lịch cho phái nữ. Ngoài ra, nút điều chỉnh thời gian tại vị trí 8 giờ cực kỳ mới lạ và độc đáo.
+            </p>
+            <div class="row imageTextBlock align-items-center justify-content-center" id="des_content_right" data-aos="fade-right" data-aos-duration="1000">
+                <p class="col-md-5 text-content" style="text-align: right;">
+                </p>
+                <div class="col-md-6">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="row imageTextBlock align-items-center justify-content-center" id="des_content_left" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-6">
+                    <img src="" alt="">
+                </div>
+                <p class="col-md-5 text-content" style="text-align: left;">
+            </div>
+        </div>
+        <div class="container about_des mb-5" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="about_des__title text-center">MÔ TẢ</h2>
+            <div class="about_des__content">
+                <div class="row mt-4" id="about-des">
+                    <p>Phần mặt số mặt xà cừ có những nét bay bổng, lượn sóng và độ chuyển màu theo từng góc ánh sáng. Ở các mốc giờ là đính các viên tròn nổi khối sáng bóng như ngọc trai và ở góc 8h là viên kim cương nổi bật. Mỗi một mặt số xà cừ sẽ là độc nhất, chính vì vậy mỗi chiếc Citizen EM0910-80D sẽ là một phiên bản “chỉ có một trên đời”. Đây là một chi tiết “đắt giá” nhất của mẫu đồng hồ này mà quý cô nào cũng muốn sở hữu. </p>
+                </div>
+                <div class="about_des__descr">
+                </div>
+            </div>
+        </div>
+        <div class="container about_des mb-5" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="about_des__title text-center">BÌNH LUẬN VÀ ĐÁNH GIÁ</h2>
+            <div class="about_des__content">
+                <div class="row mt-4" id="about-des">
+                    <p>Đóng góp của bạn là niềm vinh hạnh của chúng tôi</p>
+                </div>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" placeholder="Ý kiến của bạn về sản phẩm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button onclick="gui()" class="btn btn-outline-secondary" type="button">Gửi</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-area">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <img src="../assets/img/Logo2.png" alt="" width="180">
+                        <p class="text-capitalize mt-3">Trang phân phối đồng hồ hàng đầu Việt Nam - Nơi Bán Đồng Hồ Cao Cấp Chính Hãng 100%.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h3>Thông tin</h3>
+                        <a href="">Về chúng tôi</a>
+                        <a href="./eror.html">Chính sách bán hàng</a>
+                        <a href="./eror.html">Theo dõi đơn hàng</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Liên hệ với chúng tôi</h3>
+                        <div class="contact">
+                            <a href="./index.html">www.myWebsite.com</a>
+                            <a href="tel:0347825JQK">(+84) 347825JQK</a>
+                            <a href="mailto:zombizombi51@gmail.com">info@email.com</a>
+                            <p>12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, TP. Hồ Chí Minh</p>
+                            <div class="icon-social h1">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Newsletter</h3>
+                        <label for="email-KH">Hãy để lại email để chúng tôi có thể liên lạc với bạn</label>
+                        <input type="email" name="" id="email-KH" class="form-control" placeholder="nhập email của bạn" style="background-color: transparent">
+                    </div>
+                </div>
+                <footer>
+                    <p class="text-center m-0">Copyright © 2022 | Tất cả bản quyền thuộc về <b>Nông Đại Hùng</b> & <b>Mai Thị Hải Lý</b> </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/product.js"></script>
+<script src="../js/all.js"></script>
+</html>

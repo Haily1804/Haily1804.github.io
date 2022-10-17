@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/aboutUs.css">
+    <title>Liên hệ</title>
+  <style>
+    input,
+    label {
+      display: block;
+    }
+    .col-md-3>select{
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+    }
+    .col-md-6{
+        max-width: 30%;
+    }
+    .ph{
+        width: 700px;
+        margin-left: 100px;
+    }
+  </style>
+  <script src="./index.js"></script>
+  <title>Liên hệ</title>
+</head>
+ 
+<body>
+
+    <header id="header" data-aos="fade-down" data-aos-duration="1000">
+
+    </header>
+    <div class="modal js-modal" id="modal">
+
+    </div>
+
+    <div class="container user-content">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Họ</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Hợp lệ!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Tên</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Hợp lệ!
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Thành phố</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Vui lòng điền nơi ở!
+              </div>
+            </div>
+        
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Loại phản hồi</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option>Tích cực</option>
+                <option>Tiêu cực</option>
+              </select>
+              <div class="invalid-feedback">
+                 Vui lòng chọn loại phản hồi!
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label ph">Phản hồi của bạn</label>
+              <input type="text" class="form-control ph" id="validationCustom05 " required>
+              <div class="invalid-feedback">
+                Vui lòng điền phản hồi!
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                   Bạn sẽ chịu trách nhiệm với phản hồi này!
+                </label>
+                <div class="invalid-feedback">
+                   Bạn phải tích vào điều kiện!
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Gửi phản hồi</button>
+            </div>
+          </form>
+    </div>
+  <!-- footer -->
+  <div class="footer-area">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <img src="../assets/img/Logo2.png" alt="" width="180">
+                <p class="text-capitalize mt-3">Trang phân phối đồng hồ hàng đầu Việt Nam - Nơi Bán Đồng Hồ Cao Cấp Chính Hãng 100%.</p>
+            </div>
+            <div class="col-md-2">
+                <h3>Thông tin</h3>
+                <a href="">Về chúng tôi</a>
+                <a href="./eror.html">Chính sách bán hàng</a>
+                <a href="./eror.html">Theo dõi đơn hàng</a>
+            </div>
+            <div class="col-md-3">
+                <h3>Liên hệ với chúng tôi</h3>
+                <div class="contact">
+                    <a href="./index.html">www.myWebsite.com</a>
+                    <a href="tel:0347825JQK">(+84) 347825JQK</a>
+                    <a href="mailto:zombizombi51@gmail.com">info@email.com</a>
+                    <p>12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, TP. Hồ Chí Minh</p>
+                    <div class="icon-social h1">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3>Newsletter</h3>
+                <label for="email-KH">Hãy để lại email để chúng tôi có thể liên lạc với bạn</label>
+                <input type="email" name="" id="email-KH" class="form-control" placeholder="nhập email của bạn" style="background-color: transparent">
+            </div>
+        </div>
+        <footer>
+            <p class="text-center m-0">Copyright © 2022 | Tất cả bản quyền thuộc về <b>Nông Đại Hùng</b> & <b>Mai Thị Hải Lý</b> </p>
+        </footer>
+    </div>
+</div>
+</body>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/all.js"></script>
+<script src="../js/lienhe.js"></script>
+</html>
