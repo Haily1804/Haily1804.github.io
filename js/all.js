@@ -15,12 +15,11 @@ const header = `<nav class="navbar navbar-expand-md">
             <a class="nav-link" href="./index.html">Trang chủ</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link position-relative" href="../html/shop-new.html">Sản phẩm</a>
+            <a class="nav-link position-relative" href="#">Sản phẩm</a>
             <ul class="sub-menu bg-light">
-                <li><a class="nav-link" href="../html/shop-new.html">Sản phẩm mới</a></li>
-                <li> <a class="nav-link  " href="../html/shop-women.html">Women</a></li>
-                <li><a class="nav-link" href="../html/shop-men.html">Men</a></li>
-                <li><a class="nav-link" href="../html/citizen.html"> Comming Soon  </a></li>
+                <li> <a class="nav-link" href="../html/shop-women.html">Nữ</a></li>
+                <li><a class="nav-link" href="../html/shop-men.html">Nam</a></li>
+                <li><a class="nav-link" href="../html/shop-comming.html"> Sắp ra mắt  </a></li>
             </ul>
         </li>
         <li class="nav-item">
@@ -29,8 +28,6 @@ const header = `<nav class="navbar navbar-expand-md">
                 <li><a class="nav-link" href="../html/Rolex.html"> ROLEX </a></li>
                 <li><a class="nav-link" href="../html/Tissot.html"> TISSOT </a></li>
                 <li><a class="nav-link" href="../html/Omega.html"> OMEGA </a></li>
-                <li><a class="nav-link" href="../html/Gucci.html"> GUCCI </a></li>
-                <li><a class="nav-link" href="../html/Hublot.html"> HUBLOT </a></li>
                 <li><a class="nav-link" href="../html/citizen.html"> CITIZEN </a></li>
             </ul>
         </li>

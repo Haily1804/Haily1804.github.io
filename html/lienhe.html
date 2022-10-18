@@ -11,24 +11,10 @@
     <link rel="stylesheet" href="../css/aboutUs.css">
     <title>Liên hệ</title>
   <style>
-    input,
-    label {
-      display: block;
-    }
-    .col-md-3>select{
-        height: 40px;
-        width: 150px;
-        border-radius: 5px;
-    }
-    .col-md-6{
-        max-width: 30%;
-    }
-    .ph{
-        width: 700px;
-        margin-left: 100px;
+    h3{
+      text-align: center;
     }
   </style>
-  <script src="./index.js"></script>
   <title>Liên hệ</title>
 </head>
  
@@ -42,63 +28,49 @@
     </div>
 
     <div class="container user-content">
-        <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">Họ</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-              <div class="valid-feedback">
-                Hợp lệ!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Tên</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-              <div class="valid-feedback">
-                Hợp lệ!
-              </div>
-            </div>
+      <h3>GỬI PHẢN HỒI</h3>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email</label>
+          <input type="email"  required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Loại phản hồi</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Tích cực</option>
+            <option>Tiêu cực</option>
+          </select>
+        </div>
         
-            <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">Thành phố</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Vui lòng điền nơi ở!
-              </div>
-            </div>
-        
-            <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">Loại phản hồi</label>
-              <select class="form-select" id="validationCustom04" required>
-                <option>Tích cực</option>
-                <option>Tiêu cực</option>
-              </select>
-              <div class="invalid-feedback">
-                 Vui lòng chọn loại phản hồi!
-              </div>
-            </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Về chất lượng sản phẩm
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Về đội ngũ nhân viên
+          </label>
+        </div>
 
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label ph">Phản hồi của bạn</label>
-              <input type="text" class="form-control ph" id="validationCustom05 " required>
-              <div class="invalid-feedback">
-                Vui lòng điền phản hồi!
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                   Bạn sẽ chịu trách nhiệm với phản hồi này!
-                </label>
-                <div class="invalid-feedback">
-                   Bạn phải tích vào điều kiện!
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Gửi phản hồi</button>
-            </div>
-          </form>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Về chất lượng sản phẩm</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Về đội ngũ nhân viên</label>
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Nhập phản hồi của bạn</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="input" id="input" required></textarea>
+        </div>
+        <button type="submit" onclick="guidi()" class="btn btn-primary">Gửi đi</button>
+        
+      </form>
     </div>
   <!-- footer -->
   <div class="footer-area">
